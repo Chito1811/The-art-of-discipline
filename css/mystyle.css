@@ -74,12 +74,7 @@
 .mb-6{
     margin-bottom: 10%;
 }
-.custom-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* Ajusta la altura según tus necesidades */
-}
+
 @media screen and (min-width: 768px){
     .card {height: 430px !important;}
 }
