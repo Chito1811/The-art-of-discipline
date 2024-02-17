@@ -1,0 +1,164 @@
+*{
+    font-family: 'Nothing You Could Do', cursive !important;
+}
+.accordion-button:active, .accordion-button:focus {
+    background-color: rgb(225, 193, 14) !important;
+    color: black !important;
+}
+.nomostrar{
+    visibility: hidden;
+    
+}
+
+.w-15{
+    width: 100px;
+}
+.w-70{
+    width: 70%;
+}
+.bg-black{
+    background-color: black;
+}
+.vh-90{
+    height: 80vh;
+}
+.ps-65{
+    padding-left: 65%;
+}
+.ps-40{
+    padding-left: 45%;
+}
+.ps-30{
+    padding-left: 30%;
+}
+.w-33{
+    width: 34%;
+}
+.bg-grey{
+    background-color: #898989;
+}
+.bg-lightgrey{
+    background-color: #a5a5a5;
+}
+.text-light-lightgey{
+    color: #dedede;
+}
+.pt-6{
+    padding-top: 5%;    
+}
+
+.pt-15{
+    padding-top: 15%;    
+}
+.pt-10{
+    padding-top: 10%;    
+}
+.ms-50{
+    padding-left: 45%;
+}
+.pb-07{
+    padding-bottom: 10%;
+}
+.pb-12{
+    padding-bottom: 12%;
+}
+.pb-15{
+    padding-bottom: 20%;
+}
+.pb-05{
+    padding-bottom: 11.75%;
+}
+.mt-6{
+    margin-top: 10%;
+}
+.mb-6{
+    margin-bottom: 10%;
+}
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Ajusta la altura según tus necesidades */
+}
+@media screen and (min-width: 768px){
+    .card {height: 430px !important;}
+}
+
+body{
+    background-color:  rgb(61, 60, 60);
+    background-image: url(../img/3px-tile.png);
+}
+#hero{
+    background-color:black;
+    background-image: url(../img/notes.jpeg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+}
+#hero h1{
+    font-size: 2.8em;
+    color: rgb(255, 255, 255);
+}
+#miBoton {
+    width: 120px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 14px 20px 14px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #ffffff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#miBoton span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+#miBoton span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 49.98%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+#miBoton:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+#miBoton:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+#miBoton:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
