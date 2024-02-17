@@ -9,6 +9,9 @@
     visibility: hidden;
     
 }
+.textarea{
+    width: 80%;
+}
 
 .w-15{
     width: 100px;
